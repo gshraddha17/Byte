@@ -1009,7 +1009,7 @@ if __name__ == "__main__":
 
         elif choice in ['top headlines', 'news today', 'news', "today's top headlines"]:
             speak("Showing today's top headlines....")
-            api_key='ddbca564138b4fe58b124b68fc74270d'
+            api_key=''
             url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey='+api_key
             news = requests.get(url).json()
             articles = news['articles']
