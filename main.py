@@ -1025,12 +1025,11 @@ if __name__ == "__main__":
             webbrowser.get("microsoft-edge").open(url)
         
         elif choice in ['call']:
-            account_sid = 'AC88620b526d75aff90332d5824aa89a83'
-            auth_token = '2471d8bfe836eafc8f7c3ba3654e295e'
+            
             client = Client(account_sid, auth_token)
             call = client.calls.create(
                 to=input(),  
-                from_='+917704059089', 
+                from_='', 
                 url='http://demo.twilio.com/docs/voice.xml'  
             )
 
